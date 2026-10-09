@@ -12,18 +12,25 @@ agent harness 是包在模型外面的一层运行环境和规则，让一项要
 
 ## 目录
 
-### 第 1 章　工作怎样被交接
+在线目录与分章以 [towow.net/handbook](https://towow.net/handbook?r=gh-c02) 为准。
 
-一项工作交给下一位时，最容易丢的是代码背后的决定。这一章讲需求、任务、上下文和验收条件怎样变成可接手的对象。
+### 第 1 章　需求怎样变成可交接的工作
+
+一项工作交给下一位之前，先要把需求、边界和完成条件固定下来。
 
 - [从需求到验收：Flowness 怎样把一项工作串起来](https://towow.net/articles/harness-workflow-architecture?r=gh-c02)　需求简报、任务包、上下文胶囊和提交信封连成一条交接链，复查发现的问题按原因退回负责的那一层。
 - [长任务怎样交接、暂停与验收](https://towow.net/articles/harness-long-task-handover?r=gh-c02)　把任务、会话和成果当作三种状态。接班时核对什么，暂停时分哪几层，收货时看什么证据。
-- [把上下文接到任务上：一次 Flowness 自开发实录](https://towow.net/articles/harness-self-development?r=gh-c02)　内核和检查都已实现，生产入口却填着占位引用。用范围内接受、范围外拒绝的正反控制验收。
-- [上下文工作集：按阅读预算组织材料](https://towow.net/articles/harness-context-workset?r=gh-c02)　按执行、修复、审阅、规划的角色列出必读材料，分别记录哪些是原文交付，哪些只是审计投影。
 - [访谈停止判定：需求信息是否足以进入设计](https://towow.net/articles/harness-interview-stop?r=gh-c02)　先看关键问题是否闭合，再看信息质量，给出足够、有条件足够或仍需补充的建议。
+
+### 第 2 章　上下文与企业自己的方法
+
+接手的人拿到什么材料，这些材料怎样接到任务上，又怎样在企业里积累成方法。
+
+- [上下文工作集：按阅读预算组织材料](https://towow.net/articles/harness-context-workset?r=gh-c02)　按执行、修复、审阅、规划的角色列出必读材料，分别记录哪些是原文交付，哪些只是审计投影。
+- [把上下文接到任务上：一次 Flowness 自开发实录](https://towow.net/articles/harness-self-development?r=gh-c02)　内核和检查都已实现，生产入口却填着占位引用。用范围内接受、范围外拒绝的正反控制验收。
 - [从第一个项目，长出企业自己的 Flowness 工作方法](https://towow.net/articles/harness-enterprise-growth?r=gh-c02)　企业的方法从一个真实项目开始，按需接入流程，交付成果的同时留下判断和检查依据。
 
-### 第 2 章　怎样调度，怎样控制成本
+### 第 3 章　怎样调度，怎样控制成本
 
 任务变多、额度有限、失败会重复发生的时候，harness 要决定先做什么、做几个、什么时候停。
 
@@ -32,7 +39,7 @@ agent harness 是包在模型外面的一层运行环境和规则，让一项要
 - [有界重派](https://towow.net/articles/harness-bounded-redispatch?r=gh-c02)　自动恢复有独立的次数预算，用尽后持久记录停止状态，交给需要改变条件的处理过程。
 - [机器告警去重](https://towow.net/articles/harness-alert-dedup?r=gh-c02)　同一机器再次报告同一问题时，归入仍未解决的告警并记录复发；问题不同或原告警已结束，就重新提出。
 
-### 第 3 章　怎样记账，怎样验收
+### 第 4 章　怎样记账，怎样验收
 
 工作历史越长，越要分清保存和阅读，也要分清“声明完成”和“证据齐全”。
 
@@ -40,7 +47,7 @@ agent harness 是包在模型外面的一层运行环境和规则，让一项要
 - [完成事实的入口：类型化事件与共享写入边界](https://towow.net/articles/harness-typed-events?r=gh-c02)　完成声明曾藏在通用事件的载荷里。修正把禁止包装的规则放进两条写路共用的校验边界。
 - [从问题登记册到合并关口](https://towow.net/articles/harness-class-guards?r=gh-c02)　一次通过数足够、却漏掉守卫的“全绿”反例，以及随后的逐目标审计、合并后树验证和关口负对照。
 
-### 第 4 章　怎样恢复，怎样拒绝过期的写入
+### 第 5 章　怎样恢复，怎样拒绝过期的写入
 
 进程会退出，连接会中断，被取代的执行者会在之后突然回来。
 
