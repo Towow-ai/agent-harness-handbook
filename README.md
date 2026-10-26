@@ -62,6 +62,4 @@ Flowness 真实问题系列讲多 agent 持续协作中反复出现的交接问�
 
 ToWow，杭州和墨尔本。Flowness 是我们交付用的 agent harness，第 1 到 4 章的机制都来自做它的过程。
 
-本手册的目录和摘要由 AI 辅助起草，依据 towow.net 已发表的文章整理，发布前做过事实核对。
-
 联系：[towow.net/inquiry](https://towow.net/inquiry?r=gh-c02)
